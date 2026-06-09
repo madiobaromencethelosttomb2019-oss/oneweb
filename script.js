@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
         welcomeBtn.addEventListener('click', function() {
             alert('Selamat datang di website kami! 🎉');
         });
+// Dark mode toggle (bisa ditambahkan di semua halaman)
+    const toggleDarkMode = () => {
+document.body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        };
+
+// Simpan data form ke localStorage sementara
+    const saveToLocalStorage = (key, value) => {
+    localStorage.setItem(key, value);
+        };
     }
 
     // Form handling di halaman kontak
@@ -30,17 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Dark mode toggle (bisa ditambahkan di semua halaman)
-    const toggleDarkMode = () => {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-    };
-
-    // Simpan data form ke localStorage sementara
-    const saveToLocalStorage = (key, value) => {
-    localStorage.setItem(key, value);
-    };
 
     // Animasi sederhana untuk semua halaman
     const sections = document.querySelectorAll('section');
