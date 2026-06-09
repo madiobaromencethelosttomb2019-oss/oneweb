@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Website Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <section class="blog">
+            <h1>Blog Kami</h1>
+            <p>Artikel-artikel menarik seputar teknologi dan pengembangan web.</p>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <h2>Belajar HTML Dasar</h2>
+                    <div class="blog-meta">Tanggal: 10 Juni 2025 | Penulis: Admin</div>
+                    <p>HTML adalah dasar dari semua halaman web. Pelajari struktur dasar HTML dan elemen-elemen penting yang sering digunakan...</p>
+                    <button class="read-more" data-title="Belajar HTML Dasar" data-content="HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web. HTML menggunakan tag-tag seperti <h1>, <p>, <div>, dan masih banyak lagi untuk membangun struktur konten.">Baca Selengkapnya →</button>
+                </article>
+
+                <article class="blog-card">
+                    <h2>CSS Modern: Flexbox & Grid</h2>
+                    <div class="blog-meta">Tanggal: 8 Juni 2025 | Penulis: Admin</div>
+                    <p>Flexbox dan Grid adalah dua teknologi CSS modern yang memudahkan pembuatan layout responsif. Yuk pelajari perbedaan dan kapan menggunakannya...</p>
+                    <button class="read-more" data-title="CSS Modern: Flexbox & Grid" data-content="Flexbox cocok untuk layout satu dimensi (baris atau kolom), sementara Grid lebih powerful untuk layout dua dimensi (baris DAN kolom). Kombinasikan keduanya untuk hasil maksimal!">Baca Selengkapnya →</button>
+                </article>
+
+                <article class="blog-card">
+                    <h2>JavaScript untuk Pemula</h2>
+                    <div class="blog-meta">Tanggal: 5 Juni 2025 | Penulis: Admin</div>
+                    <p>JavaScript membuat website menjadi interaktif. Mulai dari manipulasi DOM, event handling, hingga fetch API untuk mengambil data dari server...</p>
+                    <button class="read-more" data-title="JavaScript untuk Pemula" data-content="JavaScript adalah bahasa pemrograman yang berjalan di browser. Dengan JS, kamu bisa membuat website yang dinamis, seperti menampilkan popup, mengubah konten tanpa reload, atau bahkan membuat game sederhana!">Baca Selengkapnya →</button>
+                </article>
+
+                <article class="blog-card">
+                    <h2>Tips Meningkatkan Performa Website</h2>
+                    <div class="blog-meta">Tanggal: 3 Juni 2025 | Penulis: Admin</div>
+                    <p>Website yang cepat meningkatkan pengalaman pengguna dan SEO. Pelajari teknik-teknik sederhana untuk mengoptimalkan performa website Anda...</p>
+                    <button class="read-more" data-title="Tips Meningkatkan Performa Website" data-content="Beberapa tips: kompres gambar, gunakan lazy loading, minify CSS/JS, manfaatkan browser caching, dan pilih hosting yang cepat.">Baca Selengkapnya →</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal untuk popup artikel -->
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalContent"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Website Sederhana. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
